@@ -1,0 +1,22 @@
+
+.SearchBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.SearchBox form {
+  display: flex;
+  gap: 12px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.SearchBox input,
+.SearchBox .MuiTextField-root {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
