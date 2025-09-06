@@ -9,7 +9,7 @@ export default function SearchBox({ updateInfo }) {
     let [error, setError] = useState(false);
     // const API_URL = "http://api.openweathermap.org/geo/1.0/direct";
     const API_URL = "http://api.openweathermap.org/data/2.5/weather";
-    const API_KEY = "ce5e2fd7704b56d6e1ed1d94c2d9ef03";
+    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
     
     let getWeatherInfo = async() =>{
         try{
@@ -51,10 +51,10 @@ export default function SearchBox({ updateInfo }) {
     return (
         <div className='SearchBox'>
         <form onSubmit={handelSubmit}>
-            <TextField id="city" label="City Name" variant="outlined" required value={city} onChange={handelChange}/>
+            <TextField id="city" label="Enter City Name" variant="outlined" required value={city} onChange={handelChange}/>
             <br/><br/>
-            <Button variant="contained" type='submit'>Search</Button>
-            {error && <p style={{color: "red"}}>We don't have such place in our API Check for different Place!!</p>} 
+            <Button variant="contained" type='submit'>Search Weather</Button>
+            {error && <p style={{color: "red"}}>Location not found. Please try a different city name.</p>} 
         </form>
         </div>
     );

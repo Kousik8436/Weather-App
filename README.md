@@ -1,12 +1,47 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based weather application built with Vite, Material-UI, and OpenWeatherMap API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time weather data
+- City search functionality
+- Responsive design with Material-UI
+- Secure API key management
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone and install:**
+   ```bash
+   git clone https://github.com/Kousik8436/Weather-App.git
+   cd Weather-App
+   npm install
+   ```
+
+2. **Setup environment:**
+   ```bash
+   cp .env.example .env
+   ```
+   Add your OpenWeatherMap API key to `.env`
+
+3. **Run the app:**
+   ```bash
+   npm run dev
+   ```
+
+## Environment Variables
+
+- `VITE_WEATHER_API_KEY` - Your OpenWeatherMap API key
+
+## Security
+
+- API keys are stored in environment variables
+- `.env` files are excluded from version control
+- See `SETUP.md` for detailed setup instructions
+
+## Tech Stack
+
+- React 18
+- Vite
+- Material-UI
+- OpenWeatherMap API
