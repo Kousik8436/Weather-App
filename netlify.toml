@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  VITE_WEATHER_API_KEY = "ce5e2fd7704b56d6e1ed1d94c2d9ef03"
